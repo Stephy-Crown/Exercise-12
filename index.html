@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 12
+  </title>
+  <style>
+  
+
+      .profile-picture,.profile-picture2, .profile-picture3{
+ width: 70px;
+ height: 70px;
+ border-radius: 35px;
+    }
+
+    .Follow-button{
+border:none;
+background-color: rgb(21, 125, 194);
+padding: 10px 10px;
+border-radius: 4px;
+color: white;
+font-size: 13px;
+font-weight: bold;
+ margin-top: 0;
+ margin-left: 30px;
+    }
+
+  </style>
+</head>
+<body style="padding-bottom: 100px; padding-left: 10px;">
+  <h3>12a. Flexbox with 2 items. widths=200px|75px</h3>
+  <div style="display:flex; flex-direction: row;"
+  >
+    <div style="
+    background-color: lightblue;
+    width: 200px;"
+    >200px</div>
+    <div style="width: 75px;
+    background-color: lightpink;">75px</div>
+    
+  </div>
+
+  <h3>12b. Flexbox with 3 items. widths=50px|remaining space|75px</h3>
+  <div style="display:flex; flex-direction: row;"
+  >
+    <div style="
+    background-color: lightblue;
+    width: 50px;"
+    >item1</div>
+    <div style="flex: 1;
+    background-color: lightpink;">item2</div>
+    <div style="width: 75px;
+    background-color: lightblue;">item3</div>
+    
+  </div>
+
+
+  <h3>12c. Flexbox with 4 items. evenly spread across page</h3>
+  <div style="display:flex; flex-direction: row; justify-content: space-between;"
+  >
+    <div style="
+    background-color: lightblue;
+    "
+    >item1</div>
+    <div style="
+    background-color: lightpink;">item2</div>
+    <div style="
+    background-color: lightblue;">item3</div>
+    <div style="
+    background-color: lightpink;">item4</div>
+    
+  </div>
+
+  <h3>12d. Flexbox with height=50px and gray border</h3>
+  <div style="display:flex; height: 50px; border-width: 1px; border-style: solid; border-color: grey; align-items: start; justify-content: space-between; align-items: center;"
+  >
+    <div  class="div1" style="
+    background-color: lightblue;
+     "
+    >item1</div>
+    <div class="div2" style="background-color: lightpink;">item2</div>
+    </div>
+
+    <h3>12e.</h3>
+    <div style="display:flex; height: 120px; width:300px;border-width: 1px; border-radius: 5px; border-style: solid; border-color: grey; flex-direction: column; justify-content: space-between;"
+    >
+    <div style=" display:flex; align-items: start; justify-content: space-between;margin:12px; font-family: Arial, Helvetica, sans-serif; font-size: 15px;">Home <button style="border:none; background-color: rgb(37, 37, 238); color:white; width:30px;  border-radius:15px ;">14</button></div>
+    <div style=" display:flex; align-items: start; justify-content: space-between;margin:12px; font-family: Arial, Helvetica, sans-serif; font-size: 15px;">Notifications <button style="border:none; background-color: rgb(37, 37, 238); color:white; width:25px;  border-radius:15px ;" >3</button></div>
+    <div style=" display:flex; align-items: start; justify-content: space-between;margin:12px; font-family: Arial, Helvetica, sans-serif; font-size: 15px;">Messages <button style="border:none; background-color: rgb(37, 37, 238); color:white; width:25px;  border-radius:15px ;">5</button></div>
+    </div>
+
+    <h3 class="heading">12f</h3>
+    <div style="display: flex; flex-direction: row; justify-content: space-between; background-color: blueviolet; padding:10px">
+      <div style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold;">Home</div>
+      <div><input type="text" placeholder="Search" style="width: 300px; border-radius: 150px; padding-left: 10px; box-shadow:10px 10px 30px rgba(0, 0, 0, 0.37);"></div>
+      <div><button style="border-width:1px; border-color:white; background-color:blueviolet; border-style:solid; padding: 5px; font-weight:bold; color:white;">Download</button></div>
+    </div>
+
+
+
+
+    <h3 class="heading">12g</h3>
+  <div class="H1" style="display: flex; flex-direction: row; line-height:8px ; ">
+
+  <div style="width: 85px ;">
+    <img src="1610640588-3918.webp" class="profile-picture">
+  </div>
+
+  <div style="margin: 0px;" >
+    <p style="margin: 0;font-family: arial; font-weight: bold;">
+      Steph
+    </p>
+    <p style="font-family: arial; color: rgb(96, 96, 96); font-size: 15px;">
+      Tech. Enthusiast
+    </p>
+    <p class="p2" style="font-family: arial; color: rgb(96, 96, 96); font-size: 15px;" >
+      Popular
+    </p>
+    </div>
+
+    <div class="F-button" style="margin-left: 100px;">
+      <button class="Follow-button">Follow</button>
+     </div>
+</div>
+
+
+  <div class="H1" style="display: flex; flex-direction: row; line-height:8px ; margin-top: 20px; ">
+
+  <div class="H-layout1" style="width: 85px ;">
+    <img src="62348307683ded0019d240e2.webp" class="profile-picture">
+  </div>
+
+  <div class="profile-stats">
+    <p style="margin: 0;font-family: arial; font-weight: bold;" >
+      Steph
+    </p>
+    <p style="font-family: arial; color: rgb(96, 96, 96); font-size: 15px;">
+      Tech. Enthusiast
+    </p>
+    <p style="font-family: arial; color: rgb(96, 96, 96); font-size: 15px;">
+      Popular
+    </p>
+    </div>
+
+    <div class="F-button" style="margin-left: 100px;">
+      <button class="Follow-button" >Follow</button>
+     </div>
+</div>
+
+  <div class="H1" style="display: flex; flex-direction: row; line-height:8px ; margin-top: 20px; ">
+
+  <div class="H-layout2" style="width: 85px ;">
+    <img src="images.jpg" class="profile-picture2">
+  </div>
+
+  <div class="profile-stats2">
+    <p style="margin: 0;font-family: arial; font-weight: bold;">
+      Sophia
+    </p>
+    <p style="font-family: arial; color: rgb(96, 96, 96); font-size: 15px;">
+      Tech. Savvy
+    </p>
+    <p style="font-family: arial; color: rgb(96, 96, 96); font-size: 15px;">
+      Popular
+    </p>
+    </div>
+
+    <div class="F-button" style="margin-left:128px;">
+      <button class="Follow-button">Follow</button>
+     </div>
+</div>
+
+ 
+
+
+
+
+  
+</body>
+</html>
